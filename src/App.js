@@ -9,9 +9,6 @@ import Footer from "./components/Footer";
 import Map from "./components/Map";
 
 
-import Login from "./components/admin/Login";
-import Dashboard from "./components/admin/Dashboard";
-
 function App() {
   return (
     <Routes>
@@ -31,10 +28,7 @@ function App() {
           </>
         }
       />
-
-      {/* Admin Panel */}
-      <Route path="/admin" element={<Login />} />
-      <Route path="/admin/dashboard" element={<Dashboard />} />
+      
     </Routes>
   );
 }

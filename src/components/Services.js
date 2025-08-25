@@ -5,13 +5,13 @@ function Services() {
     <section id="services" className="services">
       <h2>Hizmetlerimiz</h2>
       <div className="service-list">
+
         <div className="card">
           <h3>Oto Döşeme & İç Tasarım</h3>
           <p>
             Aracınızın içini baştan yaratıyoruz. Deri kaplama, kumaş döşeme ve kişiye özel
             tasarımlar ile hem konforu hem de estetiği artırıyoruz. 
-            BMW, Mercedes, Audi, Volkswagen, Toyota ve diğer araç markalarına özel
-            çözümler sunmaktayız.
+            BMW, Mercedes, Audi, Volkswagen, Toyota ve diğer araç markalarına özel çözümler sunmaktayız.
           </p>
         </div>
 
@@ -61,6 +61,7 @@ function Services() {
             özel çözümler geliştirmekteyiz.
           </p>
         </div>
+
       </div>
     </section>
   );

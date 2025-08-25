@@ -17,9 +17,7 @@ function Footer() {
           WhatsApp
         </a>
       </div>
-      <p className="admin-link">
-        <a href="/admin">Admin Girişi</a>
-      </p>
+     
     </footer>
   );
 }
