@@ -1,6 +1,7 @@
 import { Link } from "react-scroll";
 import "./Navbar.css";
-import logo from "C:/Users/HP/Desktop/ats_soft/Soft/src/assets/soft_logo3.png"; 
+import logo from "../assets/soft_logo3.png";
+
 
 function Navbar() {
   return (
