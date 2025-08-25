@@ -4,7 +4,7 @@
   align-items: center;
   height: 90vh;
   text-align: center;
-  background: url("/hero-bg.jpg") no-repeat center center/cover;
+  background: #000; /* ✅ siyah arka plan */
   color: white;
 }
 
@@ -21,7 +21,7 @@
 .hero-content button {
   padding: 12px 25px;
   font-size: 18px;
-  background: #d4af37;
+  background: #d4af37; /* gold */
   color: #111;
   border: none;
   border-radius: 6px;
