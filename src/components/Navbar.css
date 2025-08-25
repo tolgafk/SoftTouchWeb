@@ -1,0 +1,75 @@
+.navbar {
+  background: #111;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;                 /* Yukarı-aşağı padding kaldırıldı */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+  height: 80px;                    /* Navbar yüksekliği sabit */
+}
+
+.navbar .logo {
+  height: 100%;                    /* Logo alanı navbar yüksekliği kadar */
+  display: flex;
+  align-items: center;
+}
+
+.navbar .logo img {
+  height: 300px;                    /* Logoyu büyüttük */
+  max-height: 100%;                /* Navbar'ı taşmasın */
+  width: auto;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.navbar .logo img:hover {
+  transform: scale(1.1);           /* Hover efekti */
+}
+
+.navbar .links {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar .links a {
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: relative;
+}
+
+/* Hover efekti */
+.navbar .links a:hover {
+  color: #d32f2f;
+  background: rgba(255,255,255,0.1);
+}
+
+/* Aktif link (scroll ile bulunduğun bölüm) */
+.navbar .links .active {
+  color: #fff;
+  background: #d32f2f;
+  border-radius: 4px;
+}
+
+/* Altında ince kırmızı çizgi efekti */
+.navbar .links a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #d32f2f;
+  transition: width 0.3s;
+  margin: 0 auto;
+}
+
+.navbar .links a:hover::after {
+  width: 100%;
+}
