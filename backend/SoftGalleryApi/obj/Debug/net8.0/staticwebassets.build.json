@@ -1,0 +1,39 @@
+{
+  "Version": 1,
+  "Hash": "xJVGrWRxQ7sOIA3O1eTCG3SMAWP+v4c30mE5G/D67q0=",
+  "Source": "SoftGalleryApi",
+  "BasePath": "_content/SoftGalleryApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "SoftGalleryApi\\wwwroot",
+      "Source": "SoftGalleryApi",
+      "ContentRoot": "C:\\Users\\HP\\Desktop\\ats_soft\\Soft\\backend\\SoftGalleryApi\\wwwroot\\",
+      "BasePath": "_content/SoftGalleryApi",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\HP\\Desktop\\ats_soft\\Soft\\backend\\SoftGalleryApi\\wwwroot\\soft_gallery\\BMW\\1.jpg",
+      "SourceId": "SoftGalleryApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\HP\\Desktop\\ats_soft\\Soft\\backend\\SoftGalleryApi\\wwwroot\\",
+      "BasePath": "_content/SoftGalleryApi",
+      "RelativePath": "soft_gallery/BMW/1.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\soft_gallery\\BMW\\1.jpg"
+    }
+  ]
+}

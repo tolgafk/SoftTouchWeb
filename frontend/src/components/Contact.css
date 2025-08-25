@@ -1,0 +1,38 @@
+.contact {
+  padding: 50px 20px;
+  text-align: center;
+  background: #f8f8f8;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.contact-links a {
+  background: #e50914; /* kırmızı */
+  color: white;
+  padding: 10px 15px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.contact-links a:hover {
+  background: #b20710; /* koyu kırmızı */
+}
+
+@media (max-width: 768px) {
+  .contact-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-links a {
+    width: 100%;
+    max-width: 250px;
+  }
+}

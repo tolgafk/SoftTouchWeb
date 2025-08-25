@@ -1,0 +1,25 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\ats_soft\\Soft\\backend\\SoftGalleryApi\\wwwroot\\soft_gallery\\BMW\\1.jpg",
+      "PackagePath": "staticwebassets\\soft_gallery\\BMW\\1.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.SoftGalleryApi.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.SoftGalleryApi.props",
+      "PackagePath": "build\\SoftGalleryApi.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.SoftGalleryApi.props",
+      "PackagePath": "buildMultiTargeting\\SoftGalleryApi.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.SoftGalleryApi.props",
+      "PackagePath": "buildTransitive\\SoftGalleryApi.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

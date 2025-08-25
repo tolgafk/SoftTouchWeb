@@ -1,0 +1,59 @@
+.gallery {
+  padding: 60px 20px;
+  background: #111;
+  color: #fff;
+  text-align: center;
+}
+
+.gallery h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #e50914; /* kırmızı vurgu */
+  text-transform: uppercase;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(229, 9, 20, 0.8);
+}
+
+/* Mobil uyum */
+@media (max-width: 768px) {
+  .gallery-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .gallery-item img {
+    height: 160px;
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-item img {
+    height: 200px;
+  }
+}

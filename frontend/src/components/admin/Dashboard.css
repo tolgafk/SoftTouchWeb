@@ -1,0 +1,86 @@
+.dashboard-container {
+  padding: 30px;
+  font-family: Arial, sans-serif;
+  background: #f8f8f8;
+  min-height: 100vh;
+}
+
+.dashboard-container h2 {
+  margin-bottom: 20px;
+  font-size: 26px;
+  color: #e50914;
+}
+
+.dashboard-container form {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 25px;
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-container select,
+.dashboard-container input[type="file"] {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.dashboard-container button {
+  padding: 10px 15px;
+  background: #e50914; /* kırmızı */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.dashboard-container button:hover {
+  background: #b20710; /* koyu kırmızı */
+}
+
+.image-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.image-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  background: white;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.image-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.image-card p {
+  margin: 5px 0;
+  font-weight: bold;
+  color: #333;
+}
+
+.image-card button {
+  background: #e50914; /* kırmızı */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 12px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.image-card button:hover {
+  background: #b20710; /* koyu kırmızı */
+}
