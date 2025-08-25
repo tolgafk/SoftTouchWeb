@@ -1,26 +1,31 @@
 .gallery {
-  background: #f4f4f4;
-}
-
-.gallery h2 {
-  color: #d32f2f;
-  margin-bottom: 30px;
+  padding: 50px 20px;
+  background: #fff;
+  text-align: center;
 }
 
 .gallery-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 15px;
 }
 
 .gallery-grid img {
   width: 100%;
-  height: 180px;
-  object-fit: cover;
-  border: 3px solid #111;
-  transition: 0.3s;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
-.gallery-grid img:hover {
-  border-color: #d32f2f;
+/* Tablet */
+@media (max-width: 1024px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobil */
+@media (max-width: 600px) {
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
 }

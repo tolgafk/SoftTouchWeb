@@ -1,16 +1,35 @@
 .footer {
   background: #111;
-  color: #fff;
-  text-align: center;
+  color: white;
   padding: 20px;
+  text-align: center;
 }
 
-.footer a {
-  color: #d32f2f;
-  font-size: 12px;
+.footer .social-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 10px 0;
+}
+
+.footer .social-links a {
+  color: #d4af37;
   text-decoration: none;
+  transition: 0.3s;
 }
 
-.footer a:hover {
-  text-decoration: underline;
+.footer .social-links a:hover {
+  color: white;
+}
+
+/* Mobil uyum */
+@media (max-width: 600px) {
+  .footer {
+    font-size: 14px;
+  }
+
+  .footer .social-links {
+    flex-direction: column;
+    gap: 8px;
+  }
 }
