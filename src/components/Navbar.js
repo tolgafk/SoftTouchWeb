@@ -1,21 +1,50 @@
+import { useState } from "react";
 import { Link } from "react-scroll";
 import "./Navbar.css";
-import logo from "../assets/soft_logo3.png";
-
+import logo from "../assets/soft_logo3.png"; 
 
 function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
+  const closeMenu = () => {
+    setIsOpen(false);
+  };
+
   return (
     <nav className="navbar">
       <div className="logo">
         <img src={logo} alt="Oto İç Dizayn Logo" />
       </div>
-      <div className="links">
-        <Link to="hero" smooth duration={500}>Ana Sayfa</Link>
-        <Link to="services" smooth duration={500}>Hizmetler</Link>
-        <Link to="gallery" smooth duration={500}>Galeri</Link>
-        <Link to="about" smooth duration={500}>Hakkımızda</Link>
-        <Link to="contact" smooth duration={500}>İletişim</Link>
-        <Link to="map" smooth duration={500}>Konum</Link>
+
+      {/* Hamburger Icon */}
+      <div className="menu-icon" onClick={toggleMenu}>
+        {isOpen ? "✖" : "☰"}
+      </div>
+
+      {/* Links */}
+      <div className={`links ${isOpen ? "active" : ""}`}>
+        <Link to="hero" smooth duration={500} onClick={closeMenu}>
+          Ana Sayfa
+        </Link>
+        <Link to="services" smooth duration={500} onClick={closeMenu}>
+          Hizmetler
+        </Link>
+        <Link to="gallery" smooth duration={500} onClick={closeMenu}>
+          Galeri
+        </Link>
+        <Link to="about" smooth duration={500} onClick={closeMenu}>
+          Hakkımızda
+        </Link>
+        <Link to="contact" smooth duration={500} onClick={closeMenu}>
+          İletişim
+        </Link>
+        <Link to="map" smooth duration={500} onClick={closeMenu}>
+          Konum
+        </Link>
       </div>
     </nav>
   );
