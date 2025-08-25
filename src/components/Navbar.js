@@ -17,34 +17,20 @@ function Navbar() {
   return (
     <nav className="navbar">
       <div className="logo">
-        <img src={logo} alt="Oto İç Dizayn Logo" />
+        <img src={logo} alt="Oto İç Dizayn Logo" className="logo-img" />
       </div>
 
-      {/* Hamburger Icon */}
       <div className="menu-icon" onClick={toggleMenu}>
         {isOpen ? "✖" : "☰"}
       </div>
 
-      {/* Links */}
       <div className={`links ${isOpen ? "active" : ""}`}>
-        <Link to="hero" smooth duration={500} onClick={closeMenu}>
-          Ana Sayfa
-        </Link>
-        <Link to="services" smooth duration={500} onClick={closeMenu}>
-          Hizmetler
-        </Link>
-        <Link to="gallery" smooth duration={500} onClick={closeMenu}>
-          Galeri
-        </Link>
-        <Link to="about" smooth duration={500} onClick={closeMenu}>
-          Hakkımızda
-        </Link>
-        <Link to="contact" smooth duration={500} onClick={closeMenu}>
-          İletişim
-        </Link>
-        <Link to="map" smooth duration={500} onClick={closeMenu}>
-          Konum
-        </Link>
+        <Link to="hero" smooth duration={500} onClick={closeMenu}>Ana Sayfa</Link>
+        <Link to="services" smooth duration={500} onClick={closeMenu}>Hizmetler</Link>
+        <Link to="gallery" smooth duration={500} onClick={closeMenu}>Galeri</Link>
+        <Link to="about" smooth duration={500} onClick={closeMenu}>Hakkımızda</Link>
+        <Link to="contact" smooth duration={500} onClick={closeMenu}>İletişim</Link>
+        <Link to="map" smooth duration={500} onClick={closeMenu}>Konum</Link>
       </div>
     </nav>
   );

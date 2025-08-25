@@ -13,7 +13,7 @@
 }
 
 .footer .social-links a {
-  color: #d4af37;
+  color: #e50914; /* kırmızı */
   text-decoration: none;
   transition: 0.3s;
 }
@@ -22,7 +22,6 @@
   color: white;
 }
 
-/* Mobil uyum */
 @media (max-width: 600px) {
   .footer {
     font-size: 14px;

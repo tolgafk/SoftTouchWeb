@@ -4,33 +4,48 @@
   align-items: center;
   height: 90vh;
   text-align: center;
-  background: #000; /* ✅ siyah arka plan */
-  color: white;
+  background: #000; /* siyah arka plan */
+  color: #fff;
+  padding: 0 20px;
+}
+
+.hero-content {
+  max-width: 800px;
 }
 
 .hero-content h1 {
   font-size: 48px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
+  color: #e50914; /* kırmızı vurgu */
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 .hero-content p {
   font-size: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  line-height: 1.6;
+  color: #ddd;
 }
 
 .hero-content button {
-  padding: 12px 25px;
+  padding: 14px 28px;
   font-size: 18px;
-  background: #d4af37; /* gold */
-  color: #111;
+  background: #e50914;
+  color: #fff;
   border: none;
-  border-radius: 6px;
+  border-radius: 30px;
   cursor: pointer;
-  transition: 0.3s;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 12px rgba(229, 9, 20, 0.6);
 }
 
 .hero-content button:hover {
-  background: #b38f2f;
+  background: #b20710;
+  box-shadow: 0 0 20px rgba(229, 9, 20, 1);
+  transform: translateY(-3px) scale(1.03);
 }
 
 /* Mobil uyum */
@@ -41,7 +56,7 @@
   }
 
   .hero-content h1 {
-    font-size: 28px;
+    font-size: 32px;
   }
 
   .hero-content p {

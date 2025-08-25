@@ -18,14 +18,14 @@
   flex: 1 1 200px;
   max-width: 250px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  transition: transform 0.3s;
+  transition: transform 0.3s, background 0.3s;
 }
 
 .card:hover {
   transform: translateY(-5px);
+  background: #ffe5e5; /* kırmızı tonlu hover */
 }
 
-/* Mobil uyum */
 @media (max-width: 768px) {
   .service-list {
     flex-direction: column;

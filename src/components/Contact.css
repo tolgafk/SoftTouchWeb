@@ -13,7 +13,7 @@
 }
 
 .contact-links a {
-  background: #111;
+  background: #e50914; /* kırmızı */
   color: white;
   padding: 10px 15px;
   border-radius: 6px;
@@ -22,10 +22,9 @@
 }
 
 .contact-links a:hover {
-  background: #333;
+  background: #b20710; /* koyu kırmızı */
 }
 
-/* Mobil uyum */
 @media (max-width: 768px) {
   .contact-links {
     flex-direction: column;

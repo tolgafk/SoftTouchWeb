@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://softtouchdizayn.vercel.app/sitemap.xml
+Sitemap: https://soft-touch-web.vercel.app/sitemap.xml

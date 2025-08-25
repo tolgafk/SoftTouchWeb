@@ -6,7 +6,10 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Comfortaa", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400; /* varsayılan normal */
+  font-style: normal;
   background: #fff;
   color: #111;
 }
