@@ -1,41 +1,98 @@
 import { useEffect, useState } from "react";
+import "./Gallery.css";
 
 function Gallery() {
-  const [images, setImages] = useState([]);
+  const [sliderImages, setSliderImages] = useState([]);
+  const [brands, setBrands] = useState([]);
+  const [selectedBrand, setSelectedBrand] = useState(null);
+  const [brandImages, setBrandImages] = useState([]);
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const API_BASE = process.env.REACT_APP_API_URL || "http://localhost:5240";
 
   useEffect(() => {
-    fetch("http://localhost:5240/api/gallery")
-      .then((res) => res.json())
-      .then((data) => setImages(data))
-      .catch((err) => console.error("API Hatası:", err));
-  }, []);
+    fetch(`${API_BASE}/api/gallery/slider`)
+      .then(res => res.json())
+      .then(data => setSliderImages(data))
+      .catch(err => console.error("Slider Hatası:", err));
+  }, [API_BASE]);
+
+  useEffect(() => {
+    fetch(`${API_BASE}/api/gallery/brands`)
+      .then(res => res.json())
+      .then(data => setBrands(data))
+      .catch(err => console.error("Marka Hatası:", err));
+  }, [API_BASE]);
+
+  useEffect(() => {
+    if (selectedBrand) {
+      fetch(`${API_BASE}/api/gallery/gallery/${selectedBrand}`)
+        .then(res => res.json())
+        .then(data => setBrandImages(data))
+        .catch(err => console.error("Galeri Hatası:", err));
+    }
+  }, [selectedBrand, API_BASE]);
+
+  useEffect(() => {
+    if (sliderImages.length === 0) return;
+    const interval = setInterval(() => {
+      setCurrentIndex(prev => (prev + 1) % sliderImages.length);
+    }, 3000);
+    return () => clearInterval(interval);
+  }, [sliderImages]);
+
+  const nextSlide = () => {
+    setCurrentIndex((prev) => (prev + 1) % sliderImages.length);
+  };
+
+  const prevSlide = () => {
+    setCurrentIndex((prev) =>
+      prev === 0 ? sliderImages.length - 1 : prev - 1
+    );
+  };
 
   return (
-    <div style={{ padding: "20px" }}>
+    <div className="gallery">
       <h2>Galeri</h2>
-      <div
-        style={{
-          display: "grid",
-          gridTemplateColumns: "repeat(auto-fill, minmax(200px, 1fr))",
-          gap: "15px",
-        }}
-      >
-        {images.map((img) => (
-          <div
-            key={img.id}
-            style={{
-              border: "1px solid #ddd",
-              borderRadius: "8px",
-              padding: "10px",
-              textAlign: "center",
-            }}
+
+      {/* SLIDER */}
+      <div className="slider">
+        {sliderImages.length > 0 && (
+          <>
+            <button className="prev" onClick={prevSlide}>‹</button>
+            <div className="slider-wrapper" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
+              {sliderImages.map((img) => (
+                <img
+                  key={img.id}
+                  src={`${API_BASE}${img.filePath}`}
+                  alt={img.brand}
+                  className="slider-img"
+                />
+              ))}
+            </div>
+            <button className="next" onClick={nextSlide}>›</button>
+          </>
+        )}
+      </div>
+
+      {/* MARKA BUTONLARI */}
+      <div className="brand-buttons">
+        {brands.map((brand) => (
+          <button
+            key={brand}
+            className={brand === selectedBrand ? "active" : ""}
+            onClick={() => setSelectedBrand(brand)}
           >
-            <img
-              src={`http://localhost:5240${img.filePath}`}
-              alt={img.brand}
-              style={{ width: "100%", borderRadius: "6px" }}
-            />
-            <p>{img.brand}</p>
+            {brand}
+          </button>
+        ))}
+      </div>
+
+      {/* SEÇİLİ MARKANIN FOTOĞRAFLARI */}
+      <div className="gallery-grid">
+        {brandImages.map((img) => (
+          <div className="gallery-item" key={img.id}>
+            <img src={`${API_BASE}${img.filePath}`} alt={img.brand} />
           </div>
         ))}
       </div>

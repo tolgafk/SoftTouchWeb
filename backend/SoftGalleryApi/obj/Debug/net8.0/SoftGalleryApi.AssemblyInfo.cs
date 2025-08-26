@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SoftGalleryApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+53ab3ef6733e7b411df683796dc9ae2403f88c1d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0488cef1b78ecbca5157b74166cae9c44678936d")]
 [assembly: System.Reflection.AssemblyProductAttribute("SoftGalleryApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SoftGalleryApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
