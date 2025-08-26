@@ -16,13 +16,6 @@ function Contact() {
         >
           Instagram
         </a>
-        <a
-          href="https://www.facebook.com/softtouchdizayn"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Facebook
-        </a>
         <a href="tel:+905458643223">Telefon: 0545 864 3223</a>
         <a
           href="https://wa.me/905458643223"
