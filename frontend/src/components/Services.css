@@ -85,10 +85,6 @@
     justify-content: flex-end; /* sağda dursun */
   }
 
-  .service-image img {
-  width: 100%;        /* bulunduğu alanı doldur */
-  max-width: 100%;    /* ekranın dışına taşmasın */
-  height: auto;       /* orantıyı koru */
-   }
+  
 
 }
