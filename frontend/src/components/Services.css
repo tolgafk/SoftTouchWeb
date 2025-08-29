@@ -1,38 +1,80 @@
 .services {
-  padding: 50px 20px;
+  padding: 60px 20px;
   background: #f8f8f8;
+}
+
+.services h2 {
   text-align: center;
+  font-size: 36px;
+  margin-bottom: 50px;
+  font-family: 'Playfair Display', serif; /* premium font */
+  font-weight: 700;
+  color: #111;
 }
 
 .service-list {
   display: flex;
+  flex-direction: column;
+  gap: 60px; /* her servis arası boşluk */
+}
+
+
+/* her servis satırı */
+.service-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+/* sol taraftaki yazılar */
+.service-text {
+  flex: 1;
+  text-align: left;
+}
+
+.service-text h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  font-weight: 600;
+  color: #222;
+}
+
+.service-text p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* sağdaki resim */
+.service-image {
+  flex: 1;
+  display: flex;
   justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
+  
 }
 
-.card {
-  background: white;
-  padding: 20px;
-  border-radius: 10px;
-  flex: 1 1 200px;
-  max-width: 250px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  transition: transform 0.3s, background 0.3s;
+.service-image img {
+  width: 500px;       /* sabit genişlik */
+  height: 400px;      /* sabit yükseklik */
+  border-radius: 12px;
+  object-fit: cover;  /* taşan kısmı kırpar, orantılı görünüm sağlar */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.30);
+  transition: transform 0.3s ease;
 }
 
-.card:hover {
-  transform: translateY(-5px);
-  background: #ffe5e5; /* kırmızı tonlu hover */
+.service-image img:hover {
+  transform: scale(1.05);
 }
 
+/* mobil uyum */
 @media (max-width: 768px) {
-  .service-list {
+  .service-item {
     flex-direction: column;
-    align-items: center;
+    text-align: center;
   }
 
-  .card {
-    max-width: 100%;
+  .service-text {
+    text-align: center;
   }
 }

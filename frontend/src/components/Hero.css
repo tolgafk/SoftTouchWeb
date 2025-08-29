@@ -4,7 +4,8 @@
   align-items: center;
   height: 90vh;
   text-align: center;
-  background: #000; /* siyah arka plan */
+  background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url("/public/soft_gallery/interior_hero.png") no-repeat center center; 
+  background-size: cover;
   color: #fff;
   padding: 0 20px;
 }
@@ -28,6 +29,8 @@
   line-height: 1.6;
   color: #ddd;
 }
+
+
 
 .hero-content button {
   padding: 14px 28px;
