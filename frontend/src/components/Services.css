@@ -68,15 +68,21 @@
   transform: scale(1.05);
 }
 
-/* mobil uyum */
+/* Mobil uyum */
 @media (max-width: 768px) {
   .service-item {
-    flex-direction: column;
-    text-align: center;
+    flex-direction: row; /* yine solda yazı, sağda resim */
+    align-items: flex-start;
   }
 
- .service-image img {
-    height: 50%;   /* mobilde biraz daha küçük sabit yükseklik */
-    width :50%;
+  .service-text {
+    flex: 1;
+    text-align: left;  /* yazı solda */
+  }
+
+  .service-image img {
+    max-width: 300px;  /* mobilde küçülür ama kaybolmaz */
+    height: 300px;     /* sabit yükseklik */
   }
 }
+
