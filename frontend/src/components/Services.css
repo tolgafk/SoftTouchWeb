@@ -68,23 +68,12 @@
   transform: scale(1.05);
 }
 
-/* Mobil uyum */
+/* mobil uyum */
 @media (max-width: 768px) {
   .service-item {
-    flex-direction: row;   /* mobilde de yan yana kalsın */
-    align-items: flex-start;
-  }
-
-  .service-text {
-    flex: 1;
-    text-align: left;      /* mobilde de solda */
-  }
-
-  .service-image {
-    flex: 1;
-    justify-content: flex-end; /* sağda dursun */
+    flex-direction: row;
+    text-align: center;
   }
 
   
-
 }
