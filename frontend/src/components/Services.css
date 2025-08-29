@@ -55,26 +55,40 @@
 }
 
 .service-image img {
-  width: 500px;       /* sabit genişlik */
-  height: 400px;      /* sabit yükseklik */
+  width: 100%;
+  aspect-ratio: 16/9; /* tüm görseller aynı oranda */
   border-radius: 12px;
-  object-fit: cover;  /* taşan kısmı kırpar, orantılı görünüm sağlar */
+  object-fit: cover;  /* kırpma yaparak orantıyı korur */
   box-shadow: 0 4px 12px rgba(0,0,0,0.30);
   transition: transform 0.3s ease;
 }
+
 
 .service-image img:hover {
   transform: scale(1.05);
 }
 
-/* mobil uyum */
+/* Mobil uyum */
 @media (max-width: 768px) {
   .service-item {
-    flex-direction: column;
-    text-align: center;
+    flex-direction: row;   /* mobilde de yan yana kalsın */
+    align-items: flex-start;
   }
 
   .service-text {
-    text-align: center;
+    flex: 1;
+    text-align: left;      /* mobilde de solda */
   }
+
+  .service-image {
+    flex: 1;
+    justify-content: flex-end; /* sağda dursun */
+  }
+
+  .service-image img {
+  width: 100%;        /* bulunduğu alanı doldur */
+  max-width: 100%;    /* ekranın dışına taşmasın */
+  height: auto;       /* orantıyı koru */
+   }
+
 }
