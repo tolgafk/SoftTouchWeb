@@ -71,9 +71,12 @@
 /* mobil uyum */
 @media (max-width: 768px) {
   .service-item {
-    flex-direction: row;
+    flex-direction: column;
     text-align: center;
   }
 
-  
+ .service-image img {
+    height: 50%;   /* mobilde biraz daha küçük sabit yükseklik */
+    width :50%;
+  }
 }
