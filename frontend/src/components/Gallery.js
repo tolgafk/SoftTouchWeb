@@ -15,7 +15,7 @@ function Gallery() {
       .then((res) => res.json())
       .then((data) => {
         setAllImages(data);
-        setBrands([...new Set(data.map((item) => item.brand))]);
+        setBrands([...new Set(data.map((item) => item.Brand))]); // ✅ Brand büyük harfli
         setSliderImages(data.slice(0, 10)); // ilk 10 resmi slider için
       })
       .catch((err) => console.error("gallery.json okunamadı:", err));
@@ -24,7 +24,7 @@ function Gallery() {
   useEffect(() => {
     if (selectedBrand) {
       const filtered = allImages.filter(
-        (item) => item.brand.toLowerCase() === selectedBrand.toLowerCase()
+        (item) => item.Brand.toLowerCase() === selectedBrand.toLowerCase() // ✅ Brand
       );
       setBrandImages(filtered);
     } else {
@@ -66,9 +66,9 @@ function Gallery() {
             >
               {sliderImages.map((img) => (
                 <img
-                  key={img.id}
-                  src={img.filePath}  // 📌 JSON’daki /Galeri/... yolunu kullanıyor
-                  alt={img.brand}
+                  key={img.Id}                       // ✅ Id
+                  src={img.FilePath}                 // ✅ FilePath
+                  alt={img.Brand}                    // ✅ Brand
                   className="slider-img"
                 />
               ))}
@@ -97,8 +97,8 @@ function Gallery() {
       {selectedBrand && (
         <div className="gallery-grid">
           {brandImages.map((img) => (
-            <div className="gallery-item" key={img.id}>
-              <img src={img.filePath} alt={img.brand} />
+            <div className="gallery-item" key={img.Id}>
+              <img src={img.FilePath} alt={img.Brand} />
             </div>
           ))}
         </div>
