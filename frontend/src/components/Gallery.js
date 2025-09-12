@@ -9,14 +9,14 @@ function Gallery() {
   const [sliderImages, setSliderImages] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  // gallery.json'u frontend/public klasöründen oku
+  // 📌 Artık sadece Galeri klasöründeki JSON’dan okuyoruz
   useEffect(() => {
-    fetch("/gallery.json")
+    fetch("/Galeri/gallery.json")
       .then((res) => res.json())
       .then((data) => {
         setAllImages(data);
         setBrands([...new Set(data.map((item) => item.brand))]);
-        setSliderImages(data.slice(0, 10)); // slider için ilk 10 resmi al
+        setSliderImages(data.slice(0, 10)); // ilk 10 resmi slider için
       })
       .catch((err) => console.error("gallery.json okunamadı:", err));
   }, []);
@@ -67,7 +67,7 @@ function Gallery() {
               {sliderImages.map((img) => (
                 <img
                   key={img.id}
-                  src={img.filePath}
+                  src={img.filePath}  // 📌 JSON’daki /Galeri/... yolunu kullanıyor
                   alt={img.brand}
                   className="slider-img"
                 />
