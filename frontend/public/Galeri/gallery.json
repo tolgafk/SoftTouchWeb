@@ -22,5 +22,41 @@
     "Brand": "Audi",
     "FilePath": "/Galeri/Audi/ac0d0966-4508-4914-ad72-5ae4928af94c.png",
     "UploadDate": "2025-09-12T15:12:57.0311754+03:00"
+  },
+  {
+    "Id": 68,
+    "Brand": "BMW",
+    "FilePath": "/Galeri/BMW/586c2cf9-9a0a-489a-b18c-be8cc5279285.png",
+    "UploadDate": "2025-09-12T15:20:53.9928965+03:00"
+  },
+  {
+    "Id": 69,
+    "Brand": "Volvo",
+    "FilePath": "/Galeri/Volvo/2fd7fb37-78c8-4260-914f-7b85ed90bd17.png",
+    "UploadDate": "2025-09-12T15:21:16.837717+03:00"
+  },
+  {
+    "Id": 70,
+    "Brand": "Land Rover",
+    "FilePath": "/Galeri/Land Rover/409939b7-27dd-4b2a-ba48-7926ed4d454c.png",
+    "UploadDate": "2025-09-12T15:24:01.4108331+03:00"
+  },
+  {
+    "Id": 71,
+    "Brand": "Opel",
+    "FilePath": "/Galeri/Opel/63a2a263-6e49-47b9-8d3e-56ee9227ee5f.png",
+    "UploadDate": "2025-09-12T15:39:35.3016524+03:00"
+  },
+  {
+    "Id": 72,
+    "Brand": "BMW",
+    "FilePath": "/Galeri/BMW/df7569d1-ff08-4034-8bff-19663b0b93d8.png",
+    "UploadDate": "2025-09-12T15:39:58.4961859+03:00"
+  },
+  {
+    "Id": 73,
+    "Brand": "Land Rover",
+    "FilePath": "/Galeri/Land Rover/827c4a30-f3f8-432c-a4b4-f876fc2c8a98.png",
+    "UploadDate": "2025-09-12T15:40:22.6629956+03:00"
   }
 ]
