@@ -18,9 +18,13 @@ builder.Services.AddCors(options =>
     options.AddPolicy("AllowFrontend",
         policy =>
         {
-            policy.WithOrigins("http://localhost:3000")
-                  .AllowAnyHeader()
-                  .AllowAnyMethod();
+            policy.WithOrigins(
+                "http://localhost:3000",              // local React
+                "https://www.softtouchdizayn.com",    // senin domain
+                "https://soft-touch-web.vercel.app"   // Vercel default domain
+            )
+            .AllowAnyHeader()
+            .AllowAnyMethod();
         });
 });
 
