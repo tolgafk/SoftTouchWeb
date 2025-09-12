@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "2MEosafaRWdOGcsA+oFa8+p655gJMXORoKOeeH4641o=",
+  "Hash": "0SmNC/cfGYXoOcFgz9F5YkTQdRblTZSn4CxTRfJksko=",
   "Source": "SoftGalleryApi",
   "BasePath": "_content/SoftGalleryApi",
   "Mode": "Default",
@@ -321,6 +321,25 @@
       "OriginalItemSpec": "wwwroot\\soft_gallery\\Audi\\6c802419-5980-44ca-be96-051aed752790.png"
     },
     {
+      "Identity": "C:\\Users\\HP\\Desktop\\ats_soft\\Soft\\backend\\SoftGalleryApi\\wwwroot\\soft_gallery\\Bentley\\53062b96-8e5d-48fa-96e7-1dcf0de3314d.png",
+      "SourceId": "SoftGalleryApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\HP\\Desktop\\ats_soft\\Soft\\backend\\SoftGalleryApi\\wwwroot\\",
+      "BasePath": "_content/SoftGalleryApi",
+      "RelativePath": "soft_gallery/Bentley/53062b96-8e5d-48fa-96e7-1dcf0de3314d.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\soft_gallery\\Bentley\\53062b96-8e5d-48fa-96e7-1dcf0de3314d.png"
+    },
+    {
       "Identity": "C:\\Users\\HP\\Desktop\\ats_soft\\Soft\\backend\\SoftGalleryApi\\wwwroot\\soft_gallery\\BMW\\110ce7c8-475b-484b-afcd-b355257f10fa.png",
       "SourceId": "SoftGalleryApi",
       "SourceType": "Discovered",
@@ -452,6 +471,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\soft_gallery\\Bugatti\\17978683-cf7a-432c-b6e4-af3388c57f80.png"
+    },
+    {
+      "Identity": "C:\\Users\\HP\\Desktop\\ats_soft\\Soft\\backend\\SoftGalleryApi\\wwwroot\\soft_gallery\\Bugatti\\4266a6d0-ff60-4dbd-ab30-d81fb0bef9f6.png",
+      "SourceId": "SoftGalleryApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\HP\\Desktop\\ats_soft\\Soft\\backend\\SoftGalleryApi\\wwwroot\\",
+      "BasePath": "_content/SoftGalleryApi",
+      "RelativePath": "soft_gallery/Bugatti/4266a6d0-ff60-4dbd-ab30-d81fb0bef9f6.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\soft_gallery\\Bugatti\\4266a6d0-ff60-4dbd-ab30-d81fb0bef9f6.png"
     },
     {
       "Identity": "C:\\Users\\HP\\Desktop\\ats_soft\\Soft\\backend\\SoftGalleryApi\\wwwroot\\soft_gallery\\Bugatti\\5c18f8f8-a519-41b1-9e61-d6e8d12cd1f3.png",

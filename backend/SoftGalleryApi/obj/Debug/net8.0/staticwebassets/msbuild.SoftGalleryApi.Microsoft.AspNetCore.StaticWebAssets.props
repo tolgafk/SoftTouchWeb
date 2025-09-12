@@ -256,6 +256,22 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\soft_gallery\Audi\6c802419-5980-44ca-be96-051aed752790.png))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\soft_gallery\Bentley\53062b96-8e5d-48fa-96e7-1dcf0de3314d.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>SoftGalleryApi</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/SoftGalleryApi</BasePath>
+      <RelativePath>soft_gallery/Bentley/53062b96-8e5d-48fa-96e7-1dcf0de3314d.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\soft_gallery\Bentley\53062b96-8e5d-48fa-96e7-1dcf0de3314d.png))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\soft_gallery\BMW\110ce7c8-475b-484b-afcd-b355257f10fa.png))">
       <SourceType>Package</SourceType>
       <SourceId>SoftGalleryApi</SourceId>
@@ -367,6 +383,22 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\soft_gallery\Bugatti\17978683-cf7a-432c-b6e4-af3388c57f80.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\soft_gallery\Bugatti\4266a6d0-ff60-4dbd-ab30-d81fb0bef9f6.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>SoftGalleryApi</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/SoftGalleryApi</BasePath>
+      <RelativePath>soft_gallery/Bugatti/4266a6d0-ff60-4dbd-ab30-d81fb0bef9f6.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\soft_gallery\Bugatti\4266a6d0-ff60-4dbd-ab30-d81fb0bef9f6.png))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\soft_gallery\Bugatti\5c18f8f8-a519-41b1-9e61-d6e8d12cd1f3.png))">
       <SourceType>Package</SourceType>

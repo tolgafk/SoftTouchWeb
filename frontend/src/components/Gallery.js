@@ -2,39 +2,37 @@ import { useEffect, useState } from "react";
 import "./Gallery.css";
 
 function Gallery() {
-  const [sliderImages, setSliderImages] = useState([]);
+  const [allImages, setAllImages] = useState([]);
   const [brands, setBrands] = useState([]);
   const [selectedBrand, setSelectedBrand] = useState(null);
   const [brandImages, setBrandImages] = useState([]);
+  const [sliderImages, setSliderImages] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const API_BASE = process.env.REACT_APP_API_URL || "http://localhost:5240";
-
+  // gallery.json'u frontend/public klasöründen oku
   useEffect(() => {
-    fetch(`${API_BASE}/api/gallery/slider`)
+    fetch("/gallery.json")
       .then((res) => res.json())
-      .then((data) => setSliderImages(data))
-      .catch((err) => console.error("Slider Hatası:", err));
-  }, [API_BASE]);
-
-  useEffect(() => {
-    fetch(`${API_BASE}/api/gallery/brands`)
-      .then((res) => res.json())
-      .then((data) => setBrands(data))
-      .catch((err) => console.error("Marka Hatası:", err));
-  }, [API_BASE]);
+      .then((data) => {
+        setAllImages(data);
+        setBrands([...new Set(data.map((item) => item.brand))]);
+        setSliderImages(data.slice(0, 10)); // slider için ilk 10 resmi al
+      })
+      .catch((err) => console.error("gallery.json okunamadı:", err));
+  }, []);
 
   useEffect(() => {
     if (selectedBrand) {
-      fetch(`${API_BASE}/api/gallery/gallery/${selectedBrand}`)
-        .then((res) => res.json())
-        .then((data) => setBrandImages(data))
-        .catch((err) => console.error("Galeri Hatası:", err));
+      const filtered = allImages.filter(
+        (item) => item.brand.toLowerCase() === selectedBrand.toLowerCase()
+      );
+      setBrandImages(filtered);
     } else {
-      setBrandImages([]); // seçili marka yoksa grid boşalsın
+      setBrandImages([]);
     }
-  }, [selectedBrand, API_BASE]);
+  }, [selectedBrand, allImages]);
 
+  // Slider otomatik kayma
   useEffect(() => {
     if (sliderImages.length === 0) return;
     const interval = setInterval(() => {
@@ -61,9 +59,7 @@ function Gallery() {
       <div className="slider">
         {sliderImages.length > 0 && (
           <>
-            <button className="prev" onClick={prevSlide}>
-              ‹
-            </button>
+            <button className="prev" onClick={prevSlide}>‹</button>
             <div
               className="slider-wrapper"
               style={{ transform: `translateX(-${currentIndex * 100}%)` }}
@@ -71,15 +67,13 @@ function Gallery() {
               {sliderImages.map((img) => (
                 <img
                   key={img.id}
-                  src={`${API_BASE}${img.filePath}`}
+                  src={img.filePath}
                   alt={img.brand}
                   className="slider-img"
                 />
               ))}
             </div>
-            <button className="next" onClick={nextSlide}>
-              ›
-            </button>
+            <button className="next" onClick={nextSlide}>›</button>
           </>
         )}
       </div>
@@ -104,7 +98,7 @@ function Gallery() {
         <div className="gallery-grid">
           {brandImages.map((img) => (
             <div className="gallery-item" key={img.id}>
-              <img src={`${API_BASE}${img.filePath}`} alt={img.brand} />
+              <img src={img.filePath} alt={img.brand} />
             </div>
           ))}
         </div>

@@ -71,40 +71,85 @@ namespace SoftGalleryApi.Controllers
 
         // 5) Admin → Resim yükle
         [HttpPost("upload")]
-        public async Task<IActionResult> Upload([FromForm] IFormFile file, [FromForm] string brand)
+public async Task<IActionResult> Upload([FromForm] IFormFile file, [FromForm] string brand)
+{
+    if (file == null || string.IsNullOrEmpty(brand))
+        return BadRequest("Dosya veya marka eksik.");
+
+    // Marka klasör yolu (backend wwwroot)
+    var uploadPath = Path.Combine(_env.WebRootPath, "soft_gallery", brand);
+    if (!Directory.Exists(uploadPath))
+        Directory.CreateDirectory(uploadPath);
+
+    // Dosya adı
+    var fileName = Guid.NewGuid().ToString() + Path.GetExtension(file.FileName);
+    var filePath = Path.Combine(uploadPath, fileName);
+
+    // Dosyayı kaydet (backend wwwroot)
+    using (var stream = new FileStream(filePath, FileMode.Create))
+    {
+        await file.CopyToAsync(stream);
+    }
+
+    // DB’ye kaydet
+    var dbPath = $"/soft_gallery/{brand}/{fileName}";
+    var image = new GalleryImage
+    {
+        Brand = brand,
+        FilePath = dbPath,
+        UploadDate = DateTime.Now
+    };
+
+    _context.GalleryImages.Add(image);
+    await _context.SaveChangesAsync();
+
+    // ✅ JSON dosyasına yaz (backend wwwroot)
+    var jsonPath = Path.Combine(_env.WebRootPath, "gallery.json");
+    List<GalleryImage> galleryData = new List<GalleryImage>();
+
+    if (System.IO.File.Exists(jsonPath))
+    {
+        var json = await System.IO.File.ReadAllTextAsync(jsonPath);
+        galleryData = System.Text.Json.JsonSerializer.Deserialize<List<GalleryImage>>(json)
+                      ?? new List<GalleryImage>();
+    }
+
+    galleryData.Add(image);
+
+    var updatedJson = System.Text.Json.JsonSerializer.Serialize(
+        galleryData,
+        new System.Text.Json.JsonSerializerOptions { WriteIndented = true }
+    );
+
+    await System.IO.File.WriteAllTextAsync(jsonPath, updatedJson);
+
+    // ✅ FRONTEND/public içine de kopyala
+    try
+    {
+        // Backend kök klasöründen frontend/public yolunu bul
+        var solutionRoot = Directory.GetParent(_env.ContentRootPath)?.FullName;
+        if (solutionRoot != null)
         {
-            if (file == null || string.IsNullOrEmpty(brand))
-                return BadRequest("Dosya veya marka eksik.");
+            var frontendGalleryPath = Path.Combine(solutionRoot, "frontend", "public", "gallery", brand);
+            if (!Directory.Exists(frontendGalleryPath))
+                Directory.CreateDirectory(frontendGalleryPath);
 
-            // Marka klasör yolu
-            var uploadPath = Path.Combine(_env.WebRootPath, "soft_gallery", brand);
-            if (!Directory.Exists(uploadPath))
-                Directory.CreateDirectory(uploadPath);
+            var frontendFilePath = Path.Combine(frontendGalleryPath, fileName);
+            System.IO.File.Copy(filePath, frontendFilePath, true);
 
-            // Dosya adı
-            var fileName = Guid.NewGuid().ToString() + Path.GetExtension(file.FileName);
-            var filePath = Path.Combine(uploadPath, fileName);
-
-            // Dosyayı kaydet
-            using (var stream = new FileStream(filePath, FileMode.Create))
-            {
-                await file.CopyToAsync(stream);
-            }
-
-            // DB’ye kaydet
-            var dbPath = $"/soft_gallery/{brand}/{fileName}";
-            var image = new GalleryImage
-            {
-                Brand = brand,
-                FilePath = dbPath,
-                UploadDate = DateTime.Now
-            };
-
-            _context.GalleryImages.Add(image);
-            await _context.SaveChangesAsync();
-
-            return Ok(image);
+            // JSON’u da frontend/public içine yaz
+            var frontendJsonPath = Path.Combine(solutionRoot, "frontend", "public", "gallery.json");
+            await System.IO.File.WriteAllTextAsync(frontendJsonPath, updatedJson);
         }
+    }
+    catch (Exception ex)
+    {
+        Console.WriteLine($"Frontend'e kopyalama hatası: {ex.Message}");
+    }
+
+    return Ok(image);
+}
+
 
         // 6) Admin → Resim sil
         [HttpDelete("{id}")]
