@@ -76,7 +76,7 @@ public async Task<IActionResult> Upload([FromForm] IFormFile file, [FromForm] st
     if (file == null || string.IsNullOrEmpty(brand))
         return BadRequest("Dosya veya marka eksik.");
 
-    // Backend klasörüne kaydetmeye devam et (opsiyonel, istersen kaldırabilirsin)
+    // Backend'e kaydetme (opsiyonel, istersen bırakabilirsin)
     var uploadPath = Path.Combine(_env.WebRootPath, "soft_gallery", brand);
     if (!Directory.Exists(uploadPath))
         Directory.CreateDirectory(uploadPath);
@@ -100,36 +100,32 @@ public async Task<IActionResult> Upload([FromForm] IFormFile file, [FromForm] st
     _context.GalleryImages.Add(image);
     await _context.SaveChangesAsync();
 
-    // ✅ FRONTEND/public/Galeri içine kopyala
+    // ✅ FRONTEND/public/Galeri içine kaydet (sabit path)
     try
     {
-        var frontendRoot = Path.Combine(
-            Directory.GetParent(_env.ContentRootPath)!.FullName,
-            "frontend", "public", "Galeri", brand
-        );
+        string frontendBasePath = @"C:\Users\HP\Desktop\ats_soft\Soft\frontend\public\Galeri";
 
-        if (!Directory.Exists(frontendRoot))
-            Directory.CreateDirectory(frontendRoot);
+        // Marka klasörü oluştur
+        var frontendGalleryPath = Path.Combine(frontendBasePath, brand);
+        if (!Directory.Exists(frontendGalleryPath))
+            Directory.CreateDirectory(frontendGalleryPath);
 
-        var frontendFilePath = Path.Combine(frontendRoot, fileName);
+        // Resmi kopyala
+        var frontendFilePath = Path.Combine(frontendGalleryPath, fileName);
         System.IO.File.Copy(filePath, frontendFilePath, true);
 
-        // JSON güncelleme
-        var jsonPath = Path.Combine(
-            Directory.GetParent(_env.ContentRootPath)!.FullName,
-            "frontend", "public", "Galeri", "gallery.json"
-        );
-
+        // JSON dosyası
+        var frontendJsonPath = Path.Combine(frontendBasePath, "gallery.json");
         List<GalleryImage> galleryData = new List<GalleryImage>();
 
-        if (System.IO.File.Exists(jsonPath))
+        if (System.IO.File.Exists(frontendJsonPath))
         {
-            var json = await System.IO.File.ReadAllTextAsync(jsonPath);
+            var json = await System.IO.File.ReadAllTextAsync(frontendJsonPath);
             galleryData = System.Text.Json.JsonSerializer.Deserialize<List<GalleryImage>>(json)
                           ?? new List<GalleryImage>();
         }
 
-        // ⚠️ JSON’daki FilePath’leri frontend’e göre güncelle
+        // JSON içindeki yol frontend için /Galeri/... olacak
         image.FilePath = $"/Galeri/{brand}/{fileName}";
         galleryData.Add(image);
 
@@ -138,7 +134,7 @@ public async Task<IActionResult> Upload([FromForm] IFormFile file, [FromForm] st
             new System.Text.Json.JsonSerializerOptions { WriteIndented = true }
         );
 
-        await System.IO.File.WriteAllTextAsync(jsonPath, updatedJson);
+        await System.IO.File.WriteAllTextAsync(frontendJsonPath, updatedJson);
     }
     catch (Exception ex)
     {
@@ -147,6 +143,7 @@ public async Task<IActionResult> Upload([FromForm] IFormFile file, [FromForm] st
 
     return Ok(image);
 }
+
 
 
 

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "nk839n1XV8EwsmDjLcsGqlzpQJfz6taE5kBPplaFAZo=",
+  "Hash": "GlDHwsk+TBtNjBS0vV6mZiYX7tspgjF7wT4J9h8Xz/c=",
   "Source": "SoftGalleryApi",
   "BasePath": "_content/SoftGalleryApi",
   "Mode": "Default",
@@ -16,6 +16,25 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "C:\\Users\\HP\\Desktop\\ats_soft\\soft\\backend\\SoftGalleryApi\\wwwroot\\gallery.json",
+      "SourceId": "SoftGalleryApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\HP\\Desktop\\ats_soft\\soft\\backend\\SoftGalleryApi\\wwwroot\\",
+      "BasePath": "_content/SoftGalleryApi",
+      "RelativePath": "gallery.json",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\gallery.json"
+    },
     {
       "Identity": "C:\\Users\\HP\\Desktop\\ats_soft\\soft\\backend\\SoftGalleryApi\\wwwroot\\soft_gallery\\Audi\\6c802419-5980-44ca-be96-051aed752790.png",
       "SourceId": "SoftGalleryApi",
@@ -34,6 +53,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\soft_gallery\\Audi\\6c802419-5980-44ca-be96-051aed752790.png"
+    },
+    {
+      "Identity": "C:\\Users\\HP\\Desktop\\ats_soft\\soft\\backend\\SoftGalleryApi\\wwwroot\\soft_gallery\\Audi\\dcefa37a-3fb2-49b0-bf95-5700fc196dce.png",
+      "SourceId": "SoftGalleryApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\HP\\Desktop\\ats_soft\\soft\\backend\\SoftGalleryApi\\wwwroot\\",
+      "BasePath": "_content/SoftGalleryApi",
+      "RelativePath": "soft_gallery/Audi/dcefa37a-3fb2-49b0-bf95-5700fc196dce.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\soft_gallery\\Audi\\dcefa37a-3fb2-49b0-bf95-5700fc196dce.png"
     },
     {
       "Identity": "C:\\Users\\HP\\Desktop\\ats_soft\\soft\\backend\\SoftGalleryApi\\wwwroot\\soft_gallery\\Mercedes-Benz\\72fc8e0f-b8e5-4ea2-8c42-658fb9dbc4c5.png",
