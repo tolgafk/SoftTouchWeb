@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "GlDHwsk+TBtNjBS0vV6mZiYX7tspgjF7wT4J9h8Xz/c=",
+  "Hash": "okwB3DXFFwM+LkLK5hb9XrmMGRw2UdF/5yPGtj5FGEo=",
   "Source": "SoftGalleryApi",
   "BasePath": "_content/SoftGalleryApi",
   "Mode": "Default",
@@ -72,6 +72,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\soft_gallery\\Audi\\dcefa37a-3fb2-49b0-bf95-5700fc196dce.png"
+    },
+    {
+      "Identity": "C:\\Users\\HP\\Desktop\\ats_soft\\soft\\backend\\SoftGalleryApi\\wwwroot\\soft_gallery\\Dacia\\fd179ab2-722a-4dae-8dd9-665998ccdd92.png",
+      "SourceId": "SoftGalleryApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\HP\\Desktop\\ats_soft\\soft\\backend\\SoftGalleryApi\\wwwroot\\",
+      "BasePath": "_content/SoftGalleryApi",
+      "RelativePath": "soft_gallery/Dacia/fd179ab2-722a-4dae-8dd9-665998ccdd92.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\soft_gallery\\Dacia\\fd179ab2-722a-4dae-8dd9-665998ccdd92.png"
     },
     {
       "Identity": "C:\\Users\\HP\\Desktop\\ats_soft\\soft\\backend\\SoftGalleryApi\\wwwroot\\soft_gallery\\Mercedes-Benz\\72fc8e0f-b8e5-4ea2-8c42-658fb9dbc4c5.png",

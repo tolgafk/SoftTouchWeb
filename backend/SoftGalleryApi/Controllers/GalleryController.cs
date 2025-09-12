@@ -100,46 +100,53 @@ public async Task<IActionResult> Upload([FromForm] IFormFile file, [FromForm] st
     _context.GalleryImages.Add(image);
     await _context.SaveChangesAsync();
 
-    // ✅ FRONTEND/public/Galeri içine kaydet (sabit path)
-    try
+    // ✅ FRONTEND/public/Galeri içine kaydet
+try
+{
+    string frontendBasePath = @"C:\Users\HP\Desktop\ats_soft\Soft\frontend\public\Galeri";
+
+    // Marka klasörü oluştur
+    var frontendGalleryPath = Path.Combine(frontendBasePath, brand);
+    if (!Directory.Exists(frontendGalleryPath))
+        Directory.CreateDirectory(frontendGalleryPath);
+
+    // Resmi kopyala
+    var frontendFilePath = Path.Combine(frontendGalleryPath, fileName);
+    System.IO.File.Copy(filePath, frontendFilePath, true);
+
+    // JSON dosyası
+    var frontendJsonPath = Path.Combine(frontendBasePath, "gallery.json");
+    List<GalleryImage> galleryData = new List<GalleryImage>();
+
+    if (System.IO.File.Exists(frontendJsonPath))
     {
-        string frontendBasePath = @"C:\Users\HP\Desktop\ats_soft\Soft\frontend\public\Galeri";
-
-        // Marka klasörü oluştur
-        var frontendGalleryPath = Path.Combine(frontendBasePath, brand);
-        if (!Directory.Exists(frontendGalleryPath))
-            Directory.CreateDirectory(frontendGalleryPath);
-
-        // Resmi kopyala
-        var frontendFilePath = Path.Combine(frontendGalleryPath, fileName);
-        System.IO.File.Copy(filePath, frontendFilePath, true);
-
-        // JSON dosyası
-        var frontendJsonPath = Path.Combine(frontendBasePath, "gallery.json");
-        List<GalleryImage> galleryData = new List<GalleryImage>();
-
-        if (System.IO.File.Exists(frontendJsonPath))
-        {
-            var json = await System.IO.File.ReadAllTextAsync(frontendJsonPath);
-            galleryData = System.Text.Json.JsonSerializer.Deserialize<List<GalleryImage>>(json)
-                          ?? new List<GalleryImage>();
-        }
-
-        // JSON içindeki yol frontend için /Galeri/... olacak
-        image.FilePath = $"/Galeri/{brand}/{fileName}";
-        galleryData.Add(image);
-
-        var updatedJson = System.Text.Json.JsonSerializer.Serialize(
-            galleryData,
-            new System.Text.Json.JsonSerializerOptions { WriteIndented = true }
-        );
-
-        await System.IO.File.WriteAllTextAsync(frontendJsonPath, updatedJson);
+        var json = await System.IO.File.ReadAllTextAsync(frontendJsonPath);
+        galleryData = System.Text.Json.JsonSerializer.Deserialize<List<GalleryImage>>(json)
+                      ?? new List<GalleryImage>();
     }
-    catch (Exception ex)
+
+    // ✅ JSON’daki yol frontend için düzeltiliyor
+    var jsonImage = new GalleryImage
     {
-        Console.WriteLine($"Frontend'e kopyalama hatası: {ex.Message}");
-    }
+        Id = image.Id,
+        Brand = brand,
+        FilePath = $"/Galeri/{brand}/{fileName}",
+        UploadDate = image.UploadDate
+    };
+
+    galleryData.Add(jsonImage);
+
+    var updatedJson = System.Text.Json.JsonSerializer.Serialize(
+        galleryData,
+        new System.Text.Json.JsonSerializerOptions { WriteIndented = true }
+    );
+
+    await System.IO.File.WriteAllTextAsync(frontendJsonPath, updatedJson);
+}
+catch (Exception ex)
+{
+    Console.WriteLine($"Frontend'e kopyalama hatası: {ex.Message}");
+}
 
     return Ok(image);
 }
