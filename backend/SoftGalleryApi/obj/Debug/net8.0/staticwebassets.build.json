@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "GhtYAZ1G3NthRsYm1W/x3qMlxgKKBku1F6IRTaYf+eo=",
+  "Hash": "8hwOqsGQMrolaaHRhpo/X2T07waUOOKkLG2dqAHO0YI=",
   "Source": "SoftGalleryApi",
   "BasePath": "_content/SoftGalleryApi",
   "Mode": "Default",
@@ -15,44 +15,5 @@
       "Pattern": "**"
     }
   ],
-  "Assets": [
-    {
-      "Identity": "C:\\Users\\HP\\Desktop\\ats_soft\\Soft\\backend\\SoftGalleryApi\\wwwroot\\soft_gallery\\Acura\\1.jpg",
-      "SourceId": "SoftGalleryApi",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\HP\\Desktop\\ats_soft\\Soft\\backend\\SoftGalleryApi\\wwwroot\\",
-      "BasePath": "_content/SoftGalleryApi",
-      "RelativePath": "soft_gallery/Acura/1.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\soft_gallery\\Acura\\1.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\HP\\Desktop\\ats_soft\\Soft\\backend\\SoftGalleryApi\\wwwroot\\soft_gallery\\Acura\\2.jpg",
-      "SourceId": "SoftGalleryApi",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\HP\\Desktop\\ats_soft\\Soft\\backend\\SoftGalleryApi\\wwwroot\\",
-      "BasePath": "_content/SoftGalleryApi",
-      "RelativePath": "soft_gallery/Acura/2.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\soft_gallery\\Acura\\2.jpg"
-    }
-  ]
+  "Assets": []
 }
