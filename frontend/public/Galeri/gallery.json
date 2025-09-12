@@ -58,5 +58,47 @@
     "Brand": "Land Rover",
     "FilePath": "/Galeri/Land Rover/827c4a30-f3f8-432c-a4b4-f876fc2c8a98.png",
     "UploadDate": "2025-09-12T15:40:22.6629956+03:00"
+  },
+  {
+    "Id": 74,
+    "Brand": "Mercedes-Benz",
+    "FilePath": "/Galeri/Mercedes-Benz/71e4595c-2647-4237-a26d-6ab18be199cd.jpg",
+    "UploadDate": "2025-09-12T15:43:32.1276517+03:00"
+  },
+  {
+    "Id": 75,
+    "Brand": "Mini",
+    "FilePath": "/Galeri/Mini/2f813ab7-31f0-4728-810c-3e11c9daadfb.jpg",
+    "UploadDate": "2025-09-12T15:43:46.6405308+03:00"
+  },
+  {
+    "Id": 76,
+    "Brand": "Renault",
+    "FilePath": "/Galeri/Renault/3b88e517-662b-4c88-9395-c50165b95753.png",
+    "UploadDate": "2025-09-12T15:44:18.9353693+03:00"
+  },
+  {
+    "Id": 77,
+    "Brand": "Opel",
+    "FilePath": "/Galeri/Opel/93e6f67f-cbf6-4db3-9e01-1fa8ad1ba88d.png",
+    "UploadDate": "2025-09-12T15:44:52.7003541+03:00"
+  },
+  {
+    "Id": 78,
+    "Brand": "Renault",
+    "FilePath": "/Galeri/Renault/eb23bde8-a5f0-4265-b744-6f54a487f9ac.png",
+    "UploadDate": "2025-09-12T15:45:23.0403587+03:00"
+  },
+  {
+    "Id": 79,
+    "Brand": "Mercedes-Benz",
+    "FilePath": "/Galeri/Mercedes-Benz/f64a00ba-73b7-4382-8706-e72719118f5c.png",
+    "UploadDate": "2025-09-12T15:45:59.8666993+03:00"
+  },
+  {
+    "Id": 80,
+    "Brand": "Hyundai",
+    "FilePath": "/Galeri/Hyundai/f7511aef-51c8-4ec9-b57b-13d7cfc0527a.png",
+    "UploadDate": "2025-09-12T15:46:15.9124161+03:00"
   }
 ]
