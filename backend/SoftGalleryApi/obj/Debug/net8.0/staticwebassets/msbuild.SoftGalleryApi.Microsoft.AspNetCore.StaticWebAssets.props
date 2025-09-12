@@ -1,245 +1,5 @@
 ﻿<Project>
   <ItemGroup>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\soft_gallery\Abarth\234828bf-9224-4707-bb6e-64fcd592252b.png))">
-      <SourceType>Package</SourceType>
-      <SourceId>SoftGalleryApi</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/SoftGalleryApi</BasePath>
-      <RelativePath>soft_gallery/Abarth/234828bf-9224-4707-bb6e-64fcd592252b.png</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\soft_gallery\Abarth\234828bf-9224-4707-bb6e-64fcd592252b.png))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\soft_gallery\Abarth\3123fc3c-d0e0-4ba7-83f6-5c29e91bdf8c.png))">
-      <SourceType>Package</SourceType>
-      <SourceId>SoftGalleryApi</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/SoftGalleryApi</BasePath>
-      <RelativePath>soft_gallery/Abarth/3123fc3c-d0e0-4ba7-83f6-5c29e91bdf8c.png</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\soft_gallery\Abarth\3123fc3c-d0e0-4ba7-83f6-5c29e91bdf8c.png))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\soft_gallery\Abarth\686d4382-891e-4955-8606-93e1ee872211.png))">
-      <SourceType>Package</SourceType>
-      <SourceId>SoftGalleryApi</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/SoftGalleryApi</BasePath>
-      <RelativePath>soft_gallery/Abarth/686d4382-891e-4955-8606-93e1ee872211.png</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\soft_gallery\Abarth\686d4382-891e-4955-8606-93e1ee872211.png))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\soft_gallery\Abarth\982d31a7-8f46-44b1-a356-5aeb710d6f6b.png))">
-      <SourceType>Package</SourceType>
-      <SourceId>SoftGalleryApi</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/SoftGalleryApi</BasePath>
-      <RelativePath>soft_gallery/Abarth/982d31a7-8f46-44b1-a356-5aeb710d6f6b.png</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\soft_gallery\Abarth\982d31a7-8f46-44b1-a356-5aeb710d6f6b.png))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\soft_gallery\Abarth\a5512933-1178-48c4-a2ee-c4218a5a11d2.png))">
-      <SourceType>Package</SourceType>
-      <SourceId>SoftGalleryApi</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/SoftGalleryApi</BasePath>
-      <RelativePath>soft_gallery/Abarth/a5512933-1178-48c4-a2ee-c4218a5a11d2.png</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\soft_gallery\Abarth\a5512933-1178-48c4-a2ee-c4218a5a11d2.png))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\soft_gallery\Abarth\ae6291c2-c3dc-420d-980d-8f7d65458f0e.png))">
-      <SourceType>Package</SourceType>
-      <SourceId>SoftGalleryApi</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/SoftGalleryApi</BasePath>
-      <RelativePath>soft_gallery/Abarth/ae6291c2-c3dc-420d-980d-8f7d65458f0e.png</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\soft_gallery\Abarth\ae6291c2-c3dc-420d-980d-8f7d65458f0e.png))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\soft_gallery\Abarth\b1f50de4-55b5-4934-8084-3e1931ae4b64.png))">
-      <SourceType>Package</SourceType>
-      <SourceId>SoftGalleryApi</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/SoftGalleryApi</BasePath>
-      <RelativePath>soft_gallery/Abarth/b1f50de4-55b5-4934-8084-3e1931ae4b64.png</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\soft_gallery\Abarth\b1f50de4-55b5-4934-8084-3e1931ae4b64.png))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\soft_gallery\Alfa Romeo\1fccfc09-e058-4e4c-8a92-1bd2a9355e7a.png))">
-      <SourceType>Package</SourceType>
-      <SourceId>SoftGalleryApi</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/SoftGalleryApi</BasePath>
-      <RelativePath>soft_gallery/Alfa Romeo/1fccfc09-e058-4e4c-8a92-1bd2a9355e7a.png</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\soft_gallery\Alfa Romeo\1fccfc09-e058-4e4c-8a92-1bd2a9355e7a.png))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\soft_gallery\Alfa Romeo\2ad3e597-c504-4233-bf29-4659e6c323aa.png))">
-      <SourceType>Package</SourceType>
-      <SourceId>SoftGalleryApi</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/SoftGalleryApi</BasePath>
-      <RelativePath>soft_gallery/Alfa Romeo/2ad3e597-c504-4233-bf29-4659e6c323aa.png</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\soft_gallery\Alfa Romeo\2ad3e597-c504-4233-bf29-4659e6c323aa.png))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\soft_gallery\Alfa Romeo\66f472c0-1f51-4612-ad55-0d3d5557d468.png))">
-      <SourceType>Package</SourceType>
-      <SourceId>SoftGalleryApi</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/SoftGalleryApi</BasePath>
-      <RelativePath>soft_gallery/Alfa Romeo/66f472c0-1f51-4612-ad55-0d3d5557d468.png</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\soft_gallery\Alfa Romeo\66f472c0-1f51-4612-ad55-0d3d5557d468.png))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\soft_gallery\Alfa Romeo\676cf956-b52d-4a4f-b65a-cf9e11493f79.png))">
-      <SourceType>Package</SourceType>
-      <SourceId>SoftGalleryApi</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/SoftGalleryApi</BasePath>
-      <RelativePath>soft_gallery/Alfa Romeo/676cf956-b52d-4a4f-b65a-cf9e11493f79.png</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\soft_gallery\Alfa Romeo\676cf956-b52d-4a4f-b65a-cf9e11493f79.png))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\soft_gallery\Alfa Romeo\918732ac-25cc-4edf-9f94-220e4c0742b1.png))">
-      <SourceType>Package</SourceType>
-      <SourceId>SoftGalleryApi</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/SoftGalleryApi</BasePath>
-      <RelativePath>soft_gallery/Alfa Romeo/918732ac-25cc-4edf-9f94-220e4c0742b1.png</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\soft_gallery\Alfa Romeo\918732ac-25cc-4edf-9f94-220e4c0742b1.png))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\soft_gallery\Alfa Romeo\ed235716-575f-495b-94c4-f2ac87b53b71.png))">
-      <SourceType>Package</SourceType>
-      <SourceId>SoftGalleryApi</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/SoftGalleryApi</BasePath>
-      <RelativePath>soft_gallery/Alfa Romeo/ed235716-575f-495b-94c4-f2ac87b53b71.png</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\soft_gallery\Alfa Romeo\ed235716-575f-495b-94c4-f2ac87b53b71.png))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\soft_gallery\Audi\04ca13be-e30a-4071-930e-7ad1ee9bfb15.png))">
-      <SourceType>Package</SourceType>
-      <SourceId>SoftGalleryApi</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/SoftGalleryApi</BasePath>
-      <RelativePath>soft_gallery/Audi/04ca13be-e30a-4071-930e-7ad1ee9bfb15.png</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\soft_gallery\Audi\04ca13be-e30a-4071-930e-7ad1ee9bfb15.png))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\soft_gallery\Audi\176fdccf-67ae-4968-b3f5-a1ac5c9703d9.png))">
-      <SourceType>Package</SourceType>
-      <SourceId>SoftGalleryApi</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/SoftGalleryApi</BasePath>
-      <RelativePath>soft_gallery/Audi/176fdccf-67ae-4968-b3f5-a1ac5c9703d9.png</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\soft_gallery\Audi\176fdccf-67ae-4968-b3f5-a1ac5c9703d9.png))</OriginalItemSpec>
-    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\soft_gallery\Audi\6c802419-5980-44ca-be96-051aed752790.png))">
       <SourceType>Package</SourceType>
       <SourceId>SoftGalleryApi</SourceId>
@@ -256,12 +16,12 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\soft_gallery\Audi\6c802419-5980-44ca-be96-051aed752790.png))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\soft_gallery\Bentley\53062b96-8e5d-48fa-96e7-1dcf0de3314d.png))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\soft_gallery\Mercedes-Benz\72fc8e0f-b8e5-4ea2-8c42-658fb9dbc4c5.png))">
       <SourceType>Package</SourceType>
       <SourceId>SoftGalleryApi</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/SoftGalleryApi</BasePath>
-      <RelativePath>soft_gallery/Bentley/53062b96-8e5d-48fa-96e7-1dcf0de3314d.png</RelativePath>
+      <RelativePath>soft_gallery/Mercedes-Benz/72fc8e0f-b8e5-4ea2-8c42-658fb9dbc4c5.png</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -270,14 +30,14 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\soft_gallery\Bentley\53062b96-8e5d-48fa-96e7-1dcf0de3314d.png))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\soft_gallery\Mercedes-Benz\72fc8e0f-b8e5-4ea2-8c42-658fb9dbc4c5.png))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\soft_gallery\BMW\110ce7c8-475b-484b-afcd-b355257f10fa.png))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\soft_gallery\Mercedes-Benz\ad74de9e-1a43-48c8-8624-695db2c5fa0a.png))">
       <SourceType>Package</SourceType>
       <SourceId>SoftGalleryApi</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/SoftGalleryApi</BasePath>
-      <RelativePath>soft_gallery/BMW/110ce7c8-475b-484b-afcd-b355257f10fa.png</RelativePath>
+      <RelativePath>soft_gallery/Mercedes-Benz/ad74de9e-1a43-48c8-8624-695db2c5fa0a.png</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -286,14 +46,14 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\soft_gallery\BMW\110ce7c8-475b-484b-afcd-b355257f10fa.png))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\soft_gallery\Mercedes-Benz\ad74de9e-1a43-48c8-8624-695db2c5fa0a.png))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\soft_gallery\BMW\2fbfdb62-db32-45f7-ba9c-b3655e752b0d.png))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\soft_gallery\Renault\ec63e0fa-e0d4-4611-857f-90ca17ad8a1e.png))">
       <SourceType>Package</SourceType>
       <SourceId>SoftGalleryApi</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/SoftGalleryApi</BasePath>
-      <RelativePath>soft_gallery/BMW/2fbfdb62-db32-45f7-ba9c-b3655e752b0d.png</RelativePath>
+      <RelativePath>soft_gallery/Renault/ec63e0fa-e0d4-4611-857f-90ca17ad8a1e.png</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -302,215 +62,7 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\soft_gallery\BMW\2fbfdb62-db32-45f7-ba9c-b3655e752b0d.png))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\soft_gallery\BMW\3e8fd2b7-9641-4609-be26-8932d064d651.png))">
-      <SourceType>Package</SourceType>
-      <SourceId>SoftGalleryApi</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/SoftGalleryApi</BasePath>
-      <RelativePath>soft_gallery/BMW/3e8fd2b7-9641-4609-be26-8932d064d651.png</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\soft_gallery\BMW\3e8fd2b7-9641-4609-be26-8932d064d651.png))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\soft_gallery\BMW\6628bd90-47bc-4047-ba7a-89303fa69507.png))">
-      <SourceType>Package</SourceType>
-      <SourceId>SoftGalleryApi</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/SoftGalleryApi</BasePath>
-      <RelativePath>soft_gallery/BMW/6628bd90-47bc-4047-ba7a-89303fa69507.png</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\soft_gallery\BMW\6628bd90-47bc-4047-ba7a-89303fa69507.png))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\soft_gallery\BMW\7b5701db-b31b-453a-838b-ddef1fc58272.png))">
-      <SourceType>Package</SourceType>
-      <SourceId>SoftGalleryApi</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/SoftGalleryApi</BasePath>
-      <RelativePath>soft_gallery/BMW/7b5701db-b31b-453a-838b-ddef1fc58272.png</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\soft_gallery\BMW\7b5701db-b31b-453a-838b-ddef1fc58272.png))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\soft_gallery\BMW\9072468c-67a2-4291-b80e-b1167fc87fc1.png))">
-      <SourceType>Package</SourceType>
-      <SourceId>SoftGalleryApi</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/SoftGalleryApi</BasePath>
-      <RelativePath>soft_gallery/BMW/9072468c-67a2-4291-b80e-b1167fc87fc1.png</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\soft_gallery\BMW\9072468c-67a2-4291-b80e-b1167fc87fc1.png))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\soft_gallery\Bugatti\17978683-cf7a-432c-b6e4-af3388c57f80.png))">
-      <SourceType>Package</SourceType>
-      <SourceId>SoftGalleryApi</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/SoftGalleryApi</BasePath>
-      <RelativePath>soft_gallery/Bugatti/17978683-cf7a-432c-b6e4-af3388c57f80.png</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\soft_gallery\Bugatti\17978683-cf7a-432c-b6e4-af3388c57f80.png))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\soft_gallery\Bugatti\4266a6d0-ff60-4dbd-ab30-d81fb0bef9f6.png))">
-      <SourceType>Package</SourceType>
-      <SourceId>SoftGalleryApi</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/SoftGalleryApi</BasePath>
-      <RelativePath>soft_gallery/Bugatti/4266a6d0-ff60-4dbd-ab30-d81fb0bef9f6.png</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\soft_gallery\Bugatti\4266a6d0-ff60-4dbd-ab30-d81fb0bef9f6.png))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\soft_gallery\Bugatti\5c18f8f8-a519-41b1-9e61-d6e8d12cd1f3.png))">
-      <SourceType>Package</SourceType>
-      <SourceId>SoftGalleryApi</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/SoftGalleryApi</BasePath>
-      <RelativePath>soft_gallery/Bugatti/5c18f8f8-a519-41b1-9e61-d6e8d12cd1f3.png</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\soft_gallery\Bugatti\5c18f8f8-a519-41b1-9e61-d6e8d12cd1f3.png))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\soft_gallery\Volvo\06472fc2-5eb8-48e2-a001-510bb9485c20.png))">
-      <SourceType>Package</SourceType>
-      <SourceId>SoftGalleryApi</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/SoftGalleryApi</BasePath>
-      <RelativePath>soft_gallery/Volvo/06472fc2-5eb8-48e2-a001-510bb9485c20.png</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\soft_gallery\Volvo\06472fc2-5eb8-48e2-a001-510bb9485c20.png))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\soft_gallery\Volvo\0a87aa4c-fb51-46e9-9799-d7b2da500ba5.png))">
-      <SourceType>Package</SourceType>
-      <SourceId>SoftGalleryApi</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/SoftGalleryApi</BasePath>
-      <RelativePath>soft_gallery/Volvo/0a87aa4c-fb51-46e9-9799-d7b2da500ba5.png</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\soft_gallery\Volvo\0a87aa4c-fb51-46e9-9799-d7b2da500ba5.png))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\soft_gallery\Volvo\0c9dedb6-93fa-47b2-8e46-de3f77d7b01e.png))">
-      <SourceType>Package</SourceType>
-      <SourceId>SoftGalleryApi</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/SoftGalleryApi</BasePath>
-      <RelativePath>soft_gallery/Volvo/0c9dedb6-93fa-47b2-8e46-de3f77d7b01e.png</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\soft_gallery\Volvo\0c9dedb6-93fa-47b2-8e46-de3f77d7b01e.png))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\soft_gallery\Volvo\51162435-c95d-4f77-81af-71e5200cb58d.png))">
-      <SourceType>Package</SourceType>
-      <SourceId>SoftGalleryApi</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/SoftGalleryApi</BasePath>
-      <RelativePath>soft_gallery/Volvo/51162435-c95d-4f77-81af-71e5200cb58d.png</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\soft_gallery\Volvo\51162435-c95d-4f77-81af-71e5200cb58d.png))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\soft_gallery\Volvo\54b5ba66-08f5-4b44-b81d-2d379c4c373c.png))">
-      <SourceType>Package</SourceType>
-      <SourceId>SoftGalleryApi</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/SoftGalleryApi</BasePath>
-      <RelativePath>soft_gallery/Volvo/54b5ba66-08f5-4b44-b81d-2d379c4c373c.png</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\soft_gallery\Volvo\54b5ba66-08f5-4b44-b81d-2d379c4c373c.png))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\soft_gallery\Volvo\5c6bb1a8-443d-407a-8e24-69ef371088fc.png))">
-      <SourceType>Package</SourceType>
-      <SourceId>SoftGalleryApi</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/SoftGalleryApi</BasePath>
-      <RelativePath>soft_gallery/Volvo/5c6bb1a8-443d-407a-8e24-69ef371088fc.png</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\soft_gallery\Volvo\5c6bb1a8-443d-407a-8e24-69ef371088fc.png))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\soft_gallery\Renault\ec63e0fa-e0d4-4611-857f-90ca17ad8a1e.png))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\soft_gallery\Volvo\63d16a97-06c4-4023-a728-9eed5883afe7.png))">
       <SourceType>Package</SourceType>
@@ -527,54 +79,6 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\soft_gallery\Volvo\63d16a97-06c4-4023-a728-9eed5883afe7.png))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\soft_gallery\Volvo\b0f77006-1cf6-4c36-bcac-e5011fb0ef53.png))">
-      <SourceType>Package</SourceType>
-      <SourceId>SoftGalleryApi</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/SoftGalleryApi</BasePath>
-      <RelativePath>soft_gallery/Volvo/b0f77006-1cf6-4c36-bcac-e5011fb0ef53.png</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\soft_gallery\Volvo\b0f77006-1cf6-4c36-bcac-e5011fb0ef53.png))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\soft_gallery\Volvo\daa1ecb8-8db1-4ee8-a87f-e130037cc440.png))">
-      <SourceType>Package</SourceType>
-      <SourceId>SoftGalleryApi</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/SoftGalleryApi</BasePath>
-      <RelativePath>soft_gallery/Volvo/daa1ecb8-8db1-4ee8-a87f-e130037cc440.png</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\soft_gallery\Volvo\daa1ecb8-8db1-4ee8-a87f-e130037cc440.png))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\soft_gallery\Volvo\e75e48c6-266a-483c-8ba1-b391fc846b80.png))">
-      <SourceType>Package</SourceType>
-      <SourceId>SoftGalleryApi</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/SoftGalleryApi</BasePath>
-      <RelativePath>soft_gallery/Volvo/e75e48c6-266a-483c-8ba1-b391fc846b80.png</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\soft_gallery\Volvo\e75e48c6-266a-483c-8ba1-b391fc846b80.png))</OriginalItemSpec>
     </StaticWebAsset>
   </ItemGroup>
 </Project>
