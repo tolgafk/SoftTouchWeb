@@ -1,0 +1,26 @@
+[
+  {
+    "Id": 64,
+    "Brand": "Hyundai",
+    "FilePath": "/Galeri/Hyundai/039569eb-17fa-4fbf-b8ef-08b510ca0aca.png",
+    "UploadDate": "2025-09-12T15:07:27.9426667+03:00"
+  },
+  {
+    "Id": 65,
+    "Brand": "Land Rover",
+    "FilePath": "/Galeri/Land Rover/053ad35b-f759-47ff-9f3c-6f33d733fc79.png",
+    "UploadDate": "2025-09-12T15:11:49.1069908+03:00"
+  },
+  {
+    "Id": 66,
+    "Brand": "Audi",
+    "FilePath": "/Galeri/Audi/48fb0227-8396-43a3-869c-a0939e56e12d.png",
+    "UploadDate": "2025-09-12T15:12:38.252415+03:00"
+  },
+  {
+    "Id": 67,
+    "Brand": "Audi",
+    "FilePath": "/Galeri/Audi/ac0d0966-4508-4914-ad72-5ae4928af94c.png",
+    "UploadDate": "2025-09-12T15:12:57.0311754+03:00"
+  }
+]
