@@ -12,31 +12,33 @@ function Gallery() {
 
   useEffect(() => {
     fetch(`${API_BASE}/api/gallery/slider`)
-      .then(res => res.json())
-      .then(data => setSliderImages(data))
-      .catch(err => console.error("Slider Hatası:", err));
+      .then((res) => res.json())
+      .then((data) => setSliderImages(data))
+      .catch((err) => console.error("Slider Hatası:", err));
   }, [API_BASE]);
 
   useEffect(() => {
     fetch(`${API_BASE}/api/gallery/brands`)
-      .then(res => res.json())
-      .then(data => setBrands(data))
-      .catch(err => console.error("Marka Hatası:", err));
+      .then((res) => res.json())
+      .then((data) => setBrands(data))
+      .catch((err) => console.error("Marka Hatası:", err));
   }, [API_BASE]);
 
   useEffect(() => {
     if (selectedBrand) {
       fetch(`${API_BASE}/api/gallery/gallery/${selectedBrand}`)
-        .then(res => res.json())
-        .then(data => setBrandImages(data))
-        .catch(err => console.error("Galeri Hatası:", err));
+        .then((res) => res.json())
+        .then((data) => setBrandImages(data))
+        .catch((err) => console.error("Galeri Hatası:", err));
+    } else {
+      setBrandImages([]); // seçili marka yoksa grid boşalsın
     }
   }, [selectedBrand, API_BASE]);
 
   useEffect(() => {
     if (sliderImages.length === 0) return;
     const interval = setInterval(() => {
-      setCurrentIndex(prev => (prev + 1) % sliderImages.length);
+      setCurrentIndex((prev) => (prev + 1) % sliderImages.length);
     }, 3000);
     return () => clearInterval(interval);
   }, [sliderImages]);
@@ -59,8 +61,13 @@ function Gallery() {
       <div className="slider">
         {sliderImages.length > 0 && (
           <>
-            <button className="prev" onClick={prevSlide}>‹</button>
-            <div className="slider-wrapper" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
+            <button className="prev" onClick={prevSlide}>
+              ‹
+            </button>
+            <div
+              className="slider-wrapper"
+              style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+            >
               {sliderImages.map((img) => (
                 <img
                   key={img.id}
@@ -70,7 +77,9 @@ function Gallery() {
                 />
               ))}
             </div>
-            <button className="next" onClick={nextSlide}>›</button>
+            <button className="next" onClick={nextSlide}>
+              ›
+            </button>
           </>
         )}
       </div>
@@ -81,7 +90,9 @@ function Gallery() {
           <button
             key={brand}
             className={brand === selectedBrand ? "active" : ""}
-            onClick={() => setSelectedBrand(brand)}
+            onClick={() =>
+              setSelectedBrand(brand === selectedBrand ? null : brand)
+            }
           >
             {brand}
           </button>
@@ -89,13 +100,15 @@ function Gallery() {
       </div>
 
       {/* SEÇİLİ MARKANIN FOTOĞRAFLARI */}
-      <div className="gallery-grid">
-        {brandImages.map((img) => (
-          <div className="gallery-item" key={img.id}>
-            <img src={`${API_BASE}${img.filePath}`} alt={img.brand} />
-          </div>
-        ))}
-      </div>
+      {selectedBrand && (
+        <div className="gallery-grid">
+          {brandImages.map((img) => (
+            <div className="gallery-item" key={img.id}>
+              <img src={`${API_BASE}${img.filePath}`} alt={img.brand} />
+            </div>
+          ))}
+        </div>
+      )}
     </div>
   );
 }
