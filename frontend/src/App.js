@@ -20,12 +20,14 @@ function App() {
         element={
           <>
             <Navbar />
-            <Hero />
-            <Services />
-            <Gallery />
-            <About />
-            <Contact />
-            <Map />
+            <main>
+              <Hero />
+              <Services />
+              <Gallery />
+              <About />
+              <Contact />
+              <Map />
+            </main>
             <Footer />
           </>
         }

@@ -1,19 +1,5 @@
 User-agent: *
 Allow: /
-
-# Gizlenmesini istediğimiz yollar
 Disallow: /admin/
-Disallow: /panel/
-Disallow: /dashboard/
-Disallow: /api/
-Disallow: /config/
-Disallow: /private/
-Disallow: /scripts/
-Disallow: /node_modules/
-Disallow: /src/
-Disallow: /server/
-Disallow: /database/
-Disallow: /backup/
 
-# Sitemap
-Sitemap: https://www.softtouchdizayn.com/sitemap.xml
+Sitemap: https://www.softtouchdizayn.xyz/sitemap.xml

@@ -16,7 +16,7 @@ function Services() {
             </p>
           </div>
           <div className="service-image">
-            <img src="soft_gallery/oto-doseme.png" alt="Oto Döşeme" />
+            <img src="/soft_gallery/oto-doseme.png" alt="Beylikdüzü profesyonel oto döşeme uygulaması" loading="lazy" decoding="async" />
           </div>
         </div>
 
@@ -30,7 +30,7 @@ function Services() {
             </p>
           </div>
           <div className="service-image">
-            <img src="soft_gallery/tus.png" alt="Tuş & Trim Yenileme" />
+            <img src="/soft_gallery/tus.png" alt="Araç tuş ve trim yenileme uygulaması" loading="lazy" decoding="async" />
           </div>
         </div>
 
@@ -44,7 +44,7 @@ function Services() {
             </p>
           </div>
           <div className="service-image">
-            <img src="/soft_gallery/direksiyon.png" alt="Direksiyon Kaplama" />
+            <img src="/soft_gallery/direksiyon.png" alt="Deri direksiyon kaplama uygulaması" loading="lazy" decoding="async" />
           </div>
         </div>
 
@@ -58,7 +58,7 @@ function Services() {
             </p>
           </div>
           <div className="service-image">
-            <img src="/soft_gallery/koltuk.png" alt="Koltuk Boyama" />
+            <img src="/soft_gallery/koltuk.png" alt="Deri araç koltuğu boyama uygulaması" loading="lazy" decoding="async" />
           </div>
         </div>
 
@@ -71,7 +71,7 @@ function Services() {
             </p>
           </div>
           <div className="service-image">
-            <img src="/soft_gallery/tavan.png" alt="Tavan & Kapı Döşeme Yenileme" />
+            <img src="/soft_gallery/tavan.png" alt="Araç tavan ve kapı döşeme yenileme" loading="lazy" decoding="async" />
           </div>
         </div>
 
@@ -85,7 +85,7 @@ function Services() {
             </p>
           </div>
           <div className="service-image">
-            <img src="/soft_gallery/pasta.png" alt="Pasta Cila & İç Kuaför" />
+            <img src="/soft_gallery/pasta.png" alt="Pasta cila ve detaylı araç iç temizliği" loading="lazy" decoding="async" />
           </div>
         </div>
 

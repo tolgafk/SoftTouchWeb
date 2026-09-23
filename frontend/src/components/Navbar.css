@@ -57,6 +57,11 @@
   cursor: pointer;
   user-select: none;
   z-index: 1100; /* Menü üstünde */
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  font-family: inherit;
 }
 
 /* Mobil menü */

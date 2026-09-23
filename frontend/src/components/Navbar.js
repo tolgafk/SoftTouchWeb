@@ -15,14 +15,20 @@ function Navbar() {
   };
 
   return (
-    <nav className="navbar">
+    <nav className="navbar" aria-label="Ana menü">
       <div className="logo">
         <img src={logo} alt="Oto İç Dizayn Logo" className="logo-img" />
       </div>
 
-      <div className="menu-icon" onClick={toggleMenu}>
+      <button
+        type="button"
+        className="menu-icon"
+        onClick={toggleMenu}
+        aria-label={isOpen ? "Menüyü kapat" : "Menüyü aç"}
+        aria-expanded={isOpen}
+      >
         {isOpen ? "✖" : "☰"}
-      </div>
+      </button>
 
       <div className={`links ${isOpen ? "active" : ""}`}>
         <Link to="hero" smooth duration={500} onClick={closeMenu}>Ana Sayfa</Link>

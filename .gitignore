@@ -1,0 +1,12 @@
+# Build outputs and local dependencies
+**/bin/
+**/obj/
+**/build/
+**/node_modules/
+
+# Local secrets and editor files
+**/.env
+**/.env.*.local
+*.user
+*.suo
+.vs/

@@ -8,17 +8,25 @@ function Gallery() {
   const [brandImages, setBrandImages] = useState([]);
   const [sliderImages, setSliderImages] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [loadError, setLoadError] = useState(false);
 
   // 📌 Artık sadece Galeri klasöründeki JSON’dan okuyoruz
   useEffect(() => {
     fetch("/Galeri/gallery.json")
-      .then((res) => res.json())
-      .then((data) => {
-        setAllImages(data);
-        setBrands([...new Set(data.map((item) => item.Brand))]); // ✅ Brand büyük harfli
-        setSliderImages(data.slice(0, 10)); // ilk 10 resmi slider için
+      .then((res) => {
+        if (!res.ok) throw new Error(`Galeri yüklenemedi (${res.status})`);
+        return res.json();
       })
-      .catch((err) => console.error("gallery.json okunamadı:", err));
+      .then((data) => {
+        if (!Array.isArray(data)) throw new Error("Geçersiz galeri verisi");
+        setAllImages(data);
+        setBrands([...new Set(data.map((item) => item.Brand).filter(Boolean))].sort((a, b) => a.localeCompare(b, "tr")));
+        setSliderImages(data.slice(0, 10));
+      })
+      .catch((err) => {
+        console.error("gallery.json okunamadı:", err);
+        setLoadError(true);
+      });
   }, []);
 
   useEffect(() => {
@@ -52,14 +60,15 @@ function Gallery() {
   };
 
   return (
-    <div className="gallery">
-      <h2>Galeri</h2>
+    <section id="gallery" className="gallery" aria-labelledby="gallery-title">
+      <h2 id="gallery-title">Uygulama Galerisi</h2>
+      {loadError && <p role="status">Galeri şu anda görüntülenemiyor.</p>}
 
       {/* SLIDER */}
       <div className="slider">
         {sliderImages.length > 0 && (
           <>
-            <button className="prev" onClick={prevSlide}>‹</button>
+            <button type="button" className="prev" onClick={prevSlide} aria-label="Önceki galeri görseli">‹</button>
             <div
               className="slider-wrapper"
               style={{ transform: `translateX(-${currentIndex * 100}%)` }}
@@ -68,12 +77,14 @@ function Gallery() {
                 <img
                   key={img.Id}                       // ✅ Id
                   src={img.FilePath}                 // ✅ FilePath
-                  alt={img.Brand}                    // ✅ Brand
+                  alt={`${img.Brand} oto döşeme ve iç dizayn uygulaması`}
                   className="slider-img"
+                  loading={img.Id === sliderImages[0]?.Id ? "eager" : "lazy"}
+                  decoding="async"
                 />
               ))}
             </div>
-            <button className="next" onClick={nextSlide}>›</button>
+            <button type="button" className="next" onClick={nextSlide} aria-label="Sonraki galeri görseli">›</button>
           </>
         )}
       </div>
@@ -83,6 +94,7 @@ function Gallery() {
         {brands.map((brand) => (
           <button
             key={brand}
+            type="button"
             className={brand === selectedBrand ? "active" : ""}
             onClick={() =>
               setSelectedBrand(brand === selectedBrand ? null : brand)
@@ -98,12 +110,12 @@ function Gallery() {
         <div className="gallery-grid">
           {brandImages.map((img) => (
             <div className="gallery-item" key={img.Id}>
-              <img src={img.FilePath} alt={img.Brand} />
+              <img src={img.FilePath} alt={`${img.Brand} araç iç döşeme uygulaması`} loading="lazy" decoding="async" />
             </div>
           ))}
         </div>
       )}
-    </div>
+    </section>
   );
 }
 
