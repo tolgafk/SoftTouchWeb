@@ -15,6 +15,16 @@ function Login() {
 
   useEffect(() => {
     document.title = "Yönetim Girişi | Soft Touch Oto Dizayn";
+
+    const robotsMeta = document.querySelector('meta[name="robots"]');
+    const previousRobots = robotsMeta?.getAttribute("content");
+    robotsMeta?.setAttribute("content", "noindex, nofollow, noarchive");
+
+    return () => {
+      if (robotsMeta && previousRobots) {
+        robotsMeta.setAttribute("content", previousRobots);
+      }
+    };
   }, []);
 
   const handleSubmit = async (event) => {
