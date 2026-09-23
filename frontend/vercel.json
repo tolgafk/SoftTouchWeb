@@ -4,7 +4,7 @@
   "rewrites": [
     {
       "source": "/admin/:path*",
-      "destination": "/index.html"
+      "destination": "/"
     }
   ],
   "headers": [
